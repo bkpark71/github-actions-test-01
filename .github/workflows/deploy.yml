@@ -13,8 +13,12 @@ jobs:
       - name: simple-web
         run:  echo "This is the first cicd step"
 
-      - name : multiple-lines
+      - name: multiple-lines
         run : |
           echo "line 1"
           echo "line 2"
-            
+
+      - name: Github variables 사용하기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY        
