@@ -21,4 +21,9 @@ jobs:
       - name: Github variables 사용하기
         run: |
           echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY        
+          echo $GITHUB_REPOSITORY   
+
+      - name : Github Secret 변수 사용하기
+        run : |
+          echo ${{ secrets.MY_ENV_NAME }}
+          echo ${{ secrets.MY_ENV_PASSWORD }}
