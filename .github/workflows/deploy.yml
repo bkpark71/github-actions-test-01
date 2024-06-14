@@ -12,3 +12,9 @@ jobs:
     steps:
       - name: simple-web
         run:  echo "This is the first cicd step"
+
+      - name : multiple-lines
+        run : |
+          echo "line 1"
+          echo "line 2"
+            
