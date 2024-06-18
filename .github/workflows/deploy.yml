@@ -26,4 +26,5 @@ jobs:
       - name : Github Secret 변수 사용하기
         run : |
           echo ${{ secrets.MY_ENV_NAME }}
-          echo ${{ secrets.MY_ENV_PASSWORD }}       
+          echo ${{ secrets.MY_ENV_PASSWORD }} 
+          echo ${{ variables.MY_VAR }}
